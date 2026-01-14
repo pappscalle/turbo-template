@@ -6,14 +6,13 @@ Target computer: 286-12MHz
 Uses external tpu files, added via "git submodule"
 They will reside in `src/external/src/units`
 
-To set up the external submodule:
-
+Create a new repo from the template and then clone the new repo with `--recurse-submodules` e.g:
 ```
-git submodule add https://github.com/pappscalle/dos-tp-units.git src/external
+git clone --recurse-submodules git@github.com:pappscalle/my-cloned-repo.git
+
 ```
 
 If the submodule is not downloaded:
-
 ```
 git submodule update --init --recursive
 ```
