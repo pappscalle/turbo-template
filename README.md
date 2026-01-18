@@ -8,19 +8,18 @@ This project uses external Turbo Pascal Unit (`.tpu`) files, included via a Git 
 
 The is lcated at `src/external/src/units`
 
-### Creating a new repository from this template
+### Creating a new repository from this template and initializing the subtree
 
 After creating a new repository from this template, clone it:
 ```
 git clone git@github.com:pappscalle/my-cloned-repo.git
 ```
-### Initializing or syncing submodules
-To setup and download the units subtree, run the *init-units-script*
+and run
 ```
 ./init-units.sh
 ```
-### Updating the submodule to the latest version
-If you want the newest version of the units, you cab update them by running: 
+### Updating the subtree to the latest version
+If you want the newest version of the units, you can update them by running: 
 ```
 ./update-units.sh
 ```
