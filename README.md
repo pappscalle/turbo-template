@@ -2,33 +2,25 @@
 
 This repository was created from a template.
 
-You are free to update submodules independently.
-Doing so will intentionally diverge from the template.
-
-
 ### External dependncies
 
-This project uses external Turbo Pascal Unit (`.tpu`) files, includes via a Git submodule.
+This project uses external Turbo Pascal Unit (`.tpu`) files, included via a Git subtree.
 
-The submodule is lcated at `src/external/src/units`
+The is lcated at `src/external/src/units`
 
 ### Creating a new repository from this template
 
-After creating a new repository from this template, clone it **with submodules**:
+After creating a new repository from this template, clone it:
 ```
-git clone --recurse-submodules git@github.com:pappscalle/my-cloned-repo.git
+git clone git@github.com:pappscalle/my-cloned-repo.git
 ```
 ### Initializing or syncing submodules
-
-If the submodule is not downloaded, or if you want to sync to the version pinned to the template:
+To setup and download the units subtree, run the *init-units-script*
 ```
-git submodule update --init --recursive
+./init-units.sh
 ```
 ### Updating the submodule to the latest version
-If you want the newest version of the submodule, you may update it
-manually. This will intentionally diverge from the template:
+If you want the newest version of the units, you cab update them by running: 
 ```
-git submodule update --remote --merge
-git add src/external
-git commit -m "Update submodule"
+./update-units.sh
 ```
