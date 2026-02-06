@@ -6,7 +6,7 @@ uses crt, gfx;
 
 begin
 
-  SetVideoMode($13);
+  OpenGraphics;
 
   repeat
 
@@ -14,6 +14,6 @@ begin
 
   until KeyPressed;
 
-  SetVideoMode($03);
+  CloseGraphics;
 
 end.
